@@ -204,6 +204,12 @@ color: #8d8888;
     margin: 1px;
 }
 
+.live-feed {
+    width: ;
+    height: 500px;
+    overflow: scroll;
+} 
+
 .qn-box {
 	background-color: #FFFFFF;
 	align: center;
