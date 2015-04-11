@@ -1,0 +1,14 @@
+{
+  "name": "eduportal",
+  "version": "1.0.0",
+  "description": "EduPortal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Payam",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.12.3"
+  }
+}
