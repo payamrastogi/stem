@@ -196,8 +196,16 @@ color: #8d8888;
     =============================================*/
 	
      /*LIST VIEW*/
-.list-view {
+.list-view-q {
     background-color: #d0d0d0;
+    width: ;
+    padding: 5px;
+    border: 0px;
+    margin: 1px;
+}
+
+.list-view-a {
+    background-color: #e0e0e0;
     width: ;
     padding: 5px;
     border: 0px;
