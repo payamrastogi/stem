@@ -191,6 +191,57 @@ color: #8d8888;
 .chat-img>img {
     margin-left:20px;
 }
+/*==============================================
+    LIVE VIEW PAGE    
+    =============================================*/
+	
+     /*LIST VIEW*/
+.list-view {
+    background-color: #d0d0d0;
+    width: ;
+    padding: 10px;
+    border: 0px;
+    margin: 1px;
+}
+
+.qn-box {
+	background-color: #FFFFFF;
+	align: center;
+    width: 50%;
+    padding: 10px;
+    border: 1px;
+    border-style: solid;
+    border-color: #d0d0d0;
+    border-radius: 5px;
+    margin: 1px;
+}
+
+.submit-btn {
+	border: none;
+	font-family: CaviarDreams;
+	font-size: 30px;
+	color: #fff;
+	background: none;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	
+	background-color: #fcd04b;
+	border-radius: 5px;
+	width: ;
+    padding: 10px;
+    border: 0px;
+    margin: 1px;
+}
 
 /*==============================================
     MENU STYLES    
