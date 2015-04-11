@@ -3306,8 +3306,8 @@ input[type="button"].btn-block {
 .input-group .form-control {
   position: relative;
   z-index: 2;
-  float: right;
-  width: 40%;
+  float: left;
+  width: 100%;
   margin-bottom: 0;
 }
 .input-group-lg > .form-control,
