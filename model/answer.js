@@ -1,9 +1,9 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var questionSchema = new Schema({
+var answerSchema = new Schema({
 
-    question:String,
+    answer:String,
     userid: String,
     upvotes: Number,
     spam : Boolean,
@@ -12,4 +12,4 @@ var questionSchema = new Schema({
     tags : [String]
 });
 
-mongoose.model('question',userSchema);
+mongoose.model('answer',answerSchema);
