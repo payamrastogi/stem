@@ -13,7 +13,7 @@
     GENERAL  STYLES    
     =============================================*/
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'CaviarDreams', Open Sans', sans-serif;
 }
 
  #wrapper {
@@ -68,6 +68,7 @@ p {
 }
    .noti-box {
 min-height: 100px;
+height: ;
 padding: 20px;
 }
 
