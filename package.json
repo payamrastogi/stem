@@ -1,14 +1,17 @@
 {
-  "name": "eduportal",
+  "name": "nodeDemo",
   "version": "1.0.0",
-  "description": "EduPortal",
-  "main": "index.js",
+  "description": "ad",
+  "main": "demo.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Payam",
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.12.3"
+    "express": "^4.12.3",
+    "mongodb": "^2.0.27",
+    "mongoose": "^4.0.1",
+    "socket.io": "^1.3.5"
   }
 }

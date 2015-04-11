@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello World</title>
+
+	<script type="text/javascript">
+		function function1(msg)
+		{
+			/*
+			var q = JSON.parse(msg);
+			var ul = document.getElementById("list");
+			var li = document.createElement("li");
+			li.setAttribute('id',q._id);
+			//var text = document.getElementById('textarea').value;
+			li.appendChild(document.createTextNode(msg));
+			var btn = document.createElement("BUTTON");
+			btn.innerHTML = 'upvote';
+			btn.setAttribute('onclick','upvote(this.parentNode.id)');
+			li.appendChild(btn);
+			ul.appendChild(li);
+			*/
+
+			var q = JSON.parse(msg);
+			var td = document.createElement("td");
+			td.innerHTML = q.question;
+			var td2 = document.createElement("td");
+			td2.setAttribute('width','10%');
+		    var im = document.createElement("image");
+		    im.allign = 'right';
+		    im.style = 'width:40px';
+		    im.src = 'http://cdns2.freepik.com/free-photo/_318-25340.jpg';
+		    td2.appendChild(im);
+		    var tr = document.createElement("tr");
+		    tr.appendChild(td1);
+		    tr.appendChild(td2);
+		    var table = document.createElement("table");
+		    table.appendChild(tr);
+		    var div = document.createElement('div');
+		    
+
+
+
+
+		}
+
+		function postquestion()
+		{
+			var question = {
+				    question:document.getElementById('textarea').value,
+    				userid: 'piyush',
+    				upvotes: 0,
+    				spam : false,
+    				spamcount : 0,
+    				postedon : new Date()
+    			
+			}
+			//var text = document.getElementById('textarea').value;
+			//console.log(text);
+		    socket.emit('askquestion',JSON.stringify(question));
+
+		}
+
+		function upvote(id){
+			socket.emit('upvote',id);
+		}
+
+		function updateupvote(id){
+             console.log(id);
+             console.log(document.getElementById(id).innerHTML);
+			 var el = document.getElementById(id).innerHTML;
+			 var obj = JSON.parse(el.split('<')[0]);
+			 obj.upvotes++;
+			 document.getElementById(id).innerHTML = JSON.stringify(obj);
+		}
+	</script>
+</head>
+<body>
+<h1>TimeLine</h1>
+ <textarea id='textarea' rows="4" cols="50" placeholder='Ask A Question Here'>
+
+</textarea> 
+<button onclick='postquestion()'>POST</button>
+
+ <ul id='list'>
+
+</ul> 
+<script src="https://cdn.socket.io/socket.io-1.3.4.js"></script>
+
+<script type="text/javascript">
+      var socket = io(); 
+      socket.on('postquestion', function(msg){
+            function1(msg);
+
+      });
+
+      socket.on('incupvote', function(msg){
+            updateupvote(msg);
+
+      });
+
+    </script>
+</body>
+</html>
