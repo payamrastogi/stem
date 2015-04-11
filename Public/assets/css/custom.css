@@ -206,8 +206,8 @@ color: #8d8888;
 
 .live-feed {
     width: ;
-    height: 500px;
-    overflow: scroll;
+    height: 350px;
+    overflow: auto;
 } 
 
 .qn-box {
