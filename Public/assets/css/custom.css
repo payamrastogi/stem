@@ -18,7 +18,7 @@ body {
 
  #wrapper {
     width: 100%;
-    background:#202020;
+    background:#37474f;
 }
 
 #page-wrapper {
@@ -68,8 +68,10 @@ p {
 }
    .noti-box {
 min-height: 100px;
-height: ;
+width: 310px;
+height: 310px;
 padding: 20px;
+margin: 20px, 20px, 20px, 20px;
 }
 
     .noti-box .icon-box {
@@ -346,10 +348,10 @@ max-width:170px;
 .navbar-cls-top .navbar-brand {
 <<<<<<< HEAD
 	color: #fff;
-background: #fcd04b;
+background: #1f2e35;
 =======
     color: #fff;
-background: #C90000;
+background: #1f2e35;
 >>>>>>> origin/master
 width: 260px;
 text-align: center;
@@ -358,7 +360,7 @@ font-size: 30px;
 font-weight: 700;
 }
 .active-menu {
-    background-color:#fcd04b!important;
+    background-color:#37474f!important;
 }
 
 .arrow {
@@ -394,7 +396,7 @@ font-weight: 700;
 }
 .sidebar-collapse .nav > li > a {
     color:#fff;
-    background:#202020;
+    background:#37474f;
     text-shadow:none;
     
 }
@@ -444,23 +446,18 @@ font-weight: 700;
 }
 .navbar-side {
     border:none;
-    background-color: #202020;
+    background-color: #37474f;
     
 }
+
 .navbar-cls-top {
-<<<<<<< HEAD
-	background:#d0d0d0;
+	background-color:#1f2e35;
 	border-bottom:none;
-	
-=======
-    background:#4D4D4D;
-    border-bottom:none;
-    
->>>>>>> origin/master
+
 }
 .navbar-cls-top .navbar-brand:hover {
 
-background: #fcd04b;
+background: #37474f;
 color:#fff;
 
 }
@@ -470,7 +467,7 @@ border:0px solid black;
      
 }
 .navbar-header {
-    background: #A70303;
+    background: #37474f;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
 background-color: #B40101;
@@ -480,7 +477,7 @@ border-color: #fff;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-background-color: #FFF;
+background-color: #1f2e35;
 }
 .nav > li > a > i {
     margin-right:10px;

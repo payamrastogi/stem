@@ -27,11 +27,10 @@
                 </button>
                 <a class="navbar-brand" href="index.html">Binary admin</a> 
             </div>
-  <div style="color: white;
-padding: 15px 50px 5px 50px;
-float: right;
-font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-danger square-btn-adjust">Logout</a> </div>
-        </nav>   
+				<div style="color: black; padding: 15px 50px 5px 50px; width: 450px; float: right; font-size: 16px;">
+					<input class="form-control" placeholder="Search by Hashtags"></input>
+				</div>
+			</nav>   
            <!-- /. NAV TOP  -->
                 <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
@@ -84,19 +83,13 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
 						</div>
 					</div>
                 </div>
-				</br>
-				<!-- Search Bar -->
-				<div class="form-group">
-					<input class="form-control" placeholder="Search by Hashtags">
-					</input>
-				</div>
                  <!-- /. ROW  -->
                  <hr />
                
             <div class="row">
                 <div class="col-md-12">
                     <!-- Question View -->
-                    <div class="panel panel-default">
+                    <div class="panel panel-primary">
                         <div class="panel-heading">
                              QnA
                         </div>
@@ -104,8 +97,33 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
 								<li><div class="list-view-q">
 								<table>
 									<tr>
-									<td><img src="http://i1383.photobucket.com/albums/ah284/carinaxuyilin/q_zpsprbsj9zl.png" style="margin-left: 1px; margin-right: 2px; margin-bottom: 5px; float: left; width: 60px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</td>
-									<td width="10%"><img align="right" style="width:40px;" src="http://cdns2.freepik.com/free-photo/_318-25340.jpg"></td>
+									<td data-toggle="modal" data-target="#AnsModal"><img src="http://i1383.photobucket.com/albums/ah284/carinaxuyilin/q_zpsprbsj9zl.png" style="margin-left: 1px; margin-right: 2px; margin-bottom: 5px; float: left; width: 60px;">USERNAME
+									</br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</td>
+								<!-- modal dialog -->
+							<div class="modal fade" id="AnsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								<div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title" id="myModalLabel">Answer this question or add some interesting links!</h4>
+                                        </div>
+                                        <div class="modal-body">
+											<div class="form-group">
+                                            <textarea class="form-control" placeholder="Answer the question here!" rows="3"></textarea>
+											</div>
+											<div class="form-group">
+                                            <textarea class="form-control" placeholder="Got some interesting links? Share!" rows="3"></textarea>
+											</div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Oops</button>
+                                            <button type="button" class="btn btn-primary">Answer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+									<!-- end modal-->
+									<td width="10%"><input type="image" img align="right" style="width:40px;" src="http://i1383.photobucket.com/albums/ah284/carinaxuyilin/up-active_zpszqbcaocw.png" name="upvote" class="btTxt submit" id="upvote" /></td>
 									</tr>
 								</table>
 								</div></li>
@@ -113,7 +131,7 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
 								<table>
 									<tr>
 									<td><img src="http://i1383.photobucket.com/albums/ah284/carinaxuyilin/a_zpsx51h6pue.png" style="margin-left: 20px; margin-right: 2px; margin-bottom: 5px; float: left; width: 60px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</td>
-									<td width="10%"><img align="right" style="width:40px;" src="http://cdns2.freepik.com/free-photo/_318-25340.jpg"></td>
+									<td width="10%"><input type="image" img align="right" style="width:40px;" src="http://i1383.photobucket.com/albums/ah284/carinaxuyilin/up-active_zpszqbcaocw.png" name="upvote" class="btTxt submit" id="upvote" /></td>
 									</tr>
 								</table>
 								</div></li>
