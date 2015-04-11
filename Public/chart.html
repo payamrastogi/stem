@@ -103,7 +103,8 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
                     <div class="col-md-12">
                      <h2>Offline Class 1111</h2>   
                         <h5>Class description, topics going through right now etc, instructions on how to use the page</h5>
-                       <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                       <!-- Answered / Unanswered Buttons -->
+					   <div class="btn-group btn-group-justified" role="group" aria-label="...">
 							<div class="btn-group" role="group">
 								<button type="button" class="btn btn-default">Answered</button>
 							</div>
@@ -113,8 +114,9 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
 						</div>
 					</div>
                 </div>
+				</br>
+				<!-- Search Bar -->
 				<div class="form-group">
-					<label></label>
 					<input class="form-control" placeholder="Search by Hashtags">
 					</input>
 				</div>
@@ -129,8 +131,44 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
                              QnA
                         </div>
 							<div class="live-feed">
+								<li><div class="list-view">
+								<table>
+									<tr>
+									<td><img src="http://i1383.photobucket.com/albums/ah284/carinaxuyilin/q_zpsprbsj9zl.png" style="margin-left: 1px; margin-right: 2px; margin-bottom: 5px; float: left; width: 60px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</td>
+									<td width="10%"><img align="right" style="width:40px;" src="http://cdns2.freepik.com/free-photo/_318-25340.jpg"></td>
+									</tr>
+								</table>
+								</div></li>
+								
 							</div>
-                </div>
+							</div>
+						<!-- Modal Popup Ask box -->
+						                     <!--  Modals-->
+                        <div class="panel-body" align="center">
+                            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" align="center">
+                              Ask a Question!
+                            </button>
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title" id="myModalLabel">What's your question?</h4>
+                                        </div>
+                                        <div class="modal-body">
+											<div class="form-group">
+                                            <textarea class="form-control" rows="3"></textarea>
+											</div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Oops</button>
+                                            <button type="button" class="btn btn-primary">Ask</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     <!-- End Modals-->
            </div>
                  
     </div>
