@@ -14,8 +14,60 @@
     <link href="assets/css/custom.css" rel="stylesheet" />
      <!-- GOOGLE FONTS-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
+   <script type="text/javascript">
+
+        function loadquestions(){
+       $.getJSON('http://localhost:3000/questions2', function (data) {
+        for(i in data)
+        function1(JSON.stringify(data[i]));
+
+      });
+   }
+
+       function addquestion(){
+     //   alert(document.getElementById('textarea').value);
+
+        var question = {
+                    question:document.getElementById('textarea').value,
+                    userid: 'piyush',
+                    upvotes: 0,
+                    spam : false,
+                    spamcount : 0,
+                    postedon : new Date()
+                
+            };
+            //var text = document.getElementById('textarea').value;
+            //console.log(text);
+            socket.emit('askquestion2',JSON.stringify(question));
+
+       }
+
+       function function1(msg){
+            var ques = JSON.parse(msg);
+            var parentElement = document.getElementById('livefeed');
+            var li = document.createElement('li');
+            li.innerHTML = ' <div class=\'list-view-q\'><table><tr><td data-toggle=\'modal\'data-target=\'#AnsModal\'><img src=\'assets/img/Qn.png \'style=\'margin-left: 1px; margin-right: 2px; margin-bottom: 5px; float: left; width: 60px\'><b>'+ques.userid+'</b></br>'+ques.question+'</td></tr></table></div>';
+            parentElement.appendChild(li);
+
+       }
+
+       function printanswer(){
+
+        var parentElement = document.getElementById('livefeed');
+        var li = parentElement.firstChild;
+        var txt = document.getElementById('textarea2').value;
+        var li2 = document.createElement('li');
+
+        li2.innerHTML  = '<div class="list-view-a"><table><tr><td><img src="assets/img/Ans.png" style="margin-left: 20px; margin-right: 2px; margin-bottom: 5px; float: left; width: 60px;">'+txt+'</td><td width="10%"><input type="image" img align="right" style="width:40px;" src="http://i1383.photobucket.com/albums/ah284/carinaxuyilin/up-active_zpszqbcaocw.png" name="upvote" class="btTxt submit" id="upvote" /></td></tr></table></div>';
+        parentElement.insertBefore(li2,parentElement.childNodes[2]);
+
+
+       }
+
+   </script>
 </head>
-<body>
+<body onload = 'loadquestions()'>
     <div id="wrapper">
         <nav class="navbar navbar-default navbar-cls-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
@@ -107,7 +159,7 @@
                         <div class="panel-heading">
                              QnA
                         </div>
-							<div class="live-feed" height="350px">
+							<div id = 'livefeed' class="live-feed" height="350px">
 								<li><div class="list-view-q">
 								<table>
 									<tr>
@@ -123,7 +175,7 @@
                                         </div>
                                         <div class="modal-body">
 											<div class="form-group">
-                                            <textarea class="form-control" placeholder="Answer the question here!" rows="3"></textarea>
+                                            <textarea id='textarea2' class="form-control" placeholder="Answer the question here!" rows="3"></textarea>
 											</div>
 											<div class="form-group">
                                             <textarea class="form-control" placeholder="Got some interesting links? Share!" rows="3"></textarea>
@@ -134,7 +186,7 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Oops</button>
-                                            <button type="button" class="btn btn-primary">Answer</button>
+                                            <button type="button" class="btn btn-primary" onclick="printanswer()">Answer</button>
                                         </div>
                                     </div>
                                 </div>
@@ -169,7 +221,7 @@
                                         </div>
                                         <div class="modal-body">
 											<div class="form-group">
-                                            <textarea class="form-control" rows="3"></textarea>
+                                            <textarea class="form-control" rows="3" id = 'textarea'></textarea>
 											</div>
 											<div class="form-group">
                                             <input class="form-control" placeholder="e.g #mobile marketing, #history, #tesla"></input>
@@ -177,7 +229,7 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Oops</button>
-                                            <button type="button" class="btn btn-primary">Anonymously</button>
+                                            <button type="button"  onclick = 'addquestion()' class="btn btn-primary">Anonymously</button>
 											<button type="button" class="btn btn-primary">Ask</button>
                                         </div>
                                     </div>
