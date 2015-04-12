@@ -244,6 +244,11 @@ color: #8d8888;
 	margin-bottom: 5px;
 }
 
+.upvote-icon {
+	width: 40px;
+	float: right;
+}
+
 .qn-box {
 	background-color: #FFFFFF;
 	align: center;
@@ -296,7 +301,6 @@ color: #8d8888;
 	border-radius: 3px;
     box-shadow: 5px 5px 5px #6A7175
 }
-
 
 /*==============================================
    Search Styles   
@@ -562,74 +566,11 @@ line-height: 1.428571429;
    
 }
 
-/* BTN UPVOTE */
-.btn-upvote {
-	background: #17aa56;
-	color: #fff;
-	border-radius: 7px;
-	box-shadow: 0 5px #119e4d;
-	padding: 5px;
-	overflow: hidden;
+/*==============================================
+  LANDING PAGE   
+    =============================================*/
+.landing-page {
+	width: 450px;
+	height: 300px;
 }
-
-.btn-upvote:before {
-	color: #fff;
-	z-index: 1;
-}
-
-.btn-upvote:after {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 0;
-	width: 100%;
-	z-index: 0;
-	background: #21bb63;
-	-webkit-transition: none;
-	-moz-transition: none;
-	transition: none;
-}
-
-.btn-upvote.btn-activated:after {
-	-webkit-animation: emptyTop 0.7s forwards;
-	-moz-animation: emptyTop 0.7s forwards;
-	animation: emptyTop 0.7s forwards;
-}
-
-@-webkit-keyframes emptyTop {
-	from { 
-		height: 100%;
-	}
-}
-
-@-moz-keyframes emptyTop {
-	from { 
-		height: 100%;
-	}
-}
-
-@keyframes emptyTop {
-	from { 
-		height: 100%;
-	}
-}
-.btn-icon-only {
-	font-size: 0;
-	padding: 25px 30px;
-}
-
-.btn-icon-only:before {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	font-size: 26px;
-	line-height: 54px;
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-/* END BTN UPVOTE */
-
-
+	
