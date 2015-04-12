@@ -267,6 +267,22 @@ color: #8d8888;
     margin: 1px;
 }
 /*==============================================
+   Repo Styles   
+    =============================================*/
+.list-view-repo {
+    color: #37474f;
+	background-color: #e1e5e7;
+    height: ;
+    padding-top: 15px;
+	padding-bottom: 30px;
+	padding-left: 40px;
+    border: 0px;
+	border-radius: 3px;
+    box-shadow: 5px 5px 5px #6A7175
+}
+
+
+/*==============================================
    Search Styles   
     =============================================*/
 
