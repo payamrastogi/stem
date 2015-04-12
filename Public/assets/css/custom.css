@@ -228,6 +228,22 @@ color: #8d8888;
     overflow: auto;
 } 
 
+.qn-icon {
+	width: 60px;
+	float: left;
+	margin-left: 1px;
+	margin-right: 2px;
+	margin-bottom: 5px;
+}
+
+.ans-icon {
+	width: 60px;
+	float: left;
+	margin-left: 20px;
+	margin-right: 2px;
+	margin-bottom: 5px;
+}
+
 .qn-box {
 	background-color: #FFFFFF;
 	align: center;
